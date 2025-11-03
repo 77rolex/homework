@@ -1,0 +1,18 @@
+.main{
+    max-height: 700px;
+    overflow: auto;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 30px 0 0 30px;
+}
+
+.inline-block{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(230, 206, 97);
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 7px grey, inset -5px -5px 7px grey;
+}
