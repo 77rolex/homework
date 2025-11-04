@@ -45,7 +45,7 @@ body {
 
 /* ========================================================================================== */
 .hero {
-    background: url("/img/hero-bg.jpg") 10% 50% / cover no-repeat;
+    background: url("../img/hero-bg.jpg") 10% 50% / cover no-repeat;
     height: 508px;
 }
 
@@ -265,4 +265,5 @@ body {
     line-height: 150%;
     letter-spacing: 0%;
     text-align: left;
+
 }
