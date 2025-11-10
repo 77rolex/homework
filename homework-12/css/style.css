@@ -25,6 +25,7 @@ body {
 
 .box span {
     opacity: 0;
+    transition: 0.5s;
 }
 
 .box__scale {
@@ -43,9 +44,9 @@ body {
 
 .box:hover span {
     opacity: 1;
-    transition: 0.5s;
     transition-delay: 1.5s;
 }
 
 
 /* ================== Выполнение дз ниже =================== */
+
