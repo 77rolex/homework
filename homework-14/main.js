@@ -59,28 +59,24 @@ ifMoreThen(someNumbers)
 
 // 3)
 const calculator = (num1, num2, operator) => {
-    let result1
-    let result2
-    let result3
-    let result4
     if (operator === 'plus') {
-        return result1 = num1 + num2
+        return num1 + num2
     } else if (operator === 'minus') {
-        return result2 = num1 - num2
+        return num1 - num2
     } else if (operator === 'multiply') {
-        return result3 = num1 * num2
+        return num1 * num2
     } else if (operator === 'divide') {
         if (num2 === 0) {
             return 'Not devisible by zero'
         }
-        return result4 = num1 / num2
+        return num1 / num2
     }
     return 'Wrong operator'
 }
 
-console.log(calculator(2, 3, 'plus'))
+console.log(calculator(6, 3, 'plus'))
 console.log(calculator(2, 3, 'minus'))
-console.log(calculator(2, 3, 'multiply'))
+console.log(calculator(4, 3, 'multiply'))
 console.log(calculator(2, 3, 'divide'))
 
 
@@ -140,6 +136,7 @@ const findNotAdmin = (users) => {
     return userQuantity
 }
 console.log(`Колличество простых пользователей: ${findNotAdmin(allUsers)}`)
+
 
 
 
