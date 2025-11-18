@@ -40,18 +40,22 @@ const helloFunction = (userName) => {
 console.log(helloFunction('Oleg'))
 
 // 2)
-const someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+const someNumbers = [1, 2, 31, 4, 5, 6, 73, 8, 9, 10]
 
 const ifMoreThen = (arrayOfNumbers) => {
+    let count = 0
     for (let i = 0; i < arrayOfNumbers.length; i++) {
         if (arrayOfNumbers[i] > 10) {
-            return `Number ${arrayOfNumbers[i]} is more then 10`
+            console.log(`Number ${arrayOfNumbers[i]} is more then 10`)
+            count++
         }
     }
-    return 'There is no number more then 10'
+    if (count === 0) {
+        console.log('There is no number more then 10')
+    }
 }
 
-console.log(ifMoreThen(someNumbers))
+ifMoreThen(someNumbers)
 
 // 3)
 const calculator = (num1, num2, operator) => {
@@ -136,6 +140,7 @@ const findNotAdmin = (users) => {
     return userQuantity
 }
 console.log(`Колличество простых пользователей: ${findNotAdmin(allUsers)}`)
+
 
 
 
