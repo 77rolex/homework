@@ -1,901 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdnanNikeWebsite</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="./img/icons/nike-logo.svg">
+    <title>Домашняя работа</title>
+    <link rel="shortcut icon" href="src/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Rubik:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
 </head>
-
-<body class="body">
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <span class="header__red-line"></span>
-                    <nav class="nav">
-                        <a class="burger-icon" href="#">
-                            <span></span>
-                        </a>
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    New Arrival
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    Men
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    Women
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">
-                                    Kids
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a class="header__logo">
-                        <img src="./img/icons/nike-logo.svg" alt="Логотип NIKE">
-                    </a>
-                    <div class="user-instruments">
-                        <ul class="user-instruments__list">
-                            <li class="user-instruments__item">
-                                <a class="user-instruments__button" href="#">
-                                    <img src="./img/icons/loop.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="user-instruments__item">
-                                <a class="user-instruments__button" href="#">
-                                    <img src="./img/icons/man.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="user-instruments__item">
-                                <a class="bag-button" href="#">
-                                    <img src="./img/icons/bag.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="sidebar">
-            <div class="sidebar__close-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+<body id="body">
+<div class="overlay" id="overlay"></div>
+<div class="layout">
+    <div class="burger" id="burger">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M4 18L20 18" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 12L20 12" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 6L20 6" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </svg>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar__inner">
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_513_74730)">
+                        <path d="M46.17 -0.257004H3.83C1.57281 -0.257004 -0.257 1.57281 -0.257 3.83V46.17C-0.257 48.4272 1.57281 50.257 3.83 50.257H46.17C48.4272 50.257 50.257 48.4272 50.257 46.17V3.83C50.257 1.57281 48.4272 -0.257004 46.17 -0.257004Z"
+                              fill="#DAF765"/>
+                        <path d="M24.375 38.4H42.461L27.441 3.1585H20.4355C20.4355 3.1585 6.7895 35.881 1.1945 49.294C2.015 50.0275 3.0945 50.257 3.6945 50.257H8.8445L23.954 13.07L32.0465 32.8285H24.375V38.4Z"
+                              fill="#323843"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_513_74730">
+                            <rect width="50" height="50" fill="white"/>
+                        </clipPath>
+                    </defs>
                 </svg>
             </div>
-
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
-                        New Arrival
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
-                        Men
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
-                        Women
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="#">
-                        Kids
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="#1">
-                        Contact Us
-                    </a>
-                </li>
-                <li><hr></li>
-            </ul>
-            <ul class="sidebar__buttons-list">
-                <li class="sidebar__buttons-item">
-                    <a class="sidebar__button" href="#" target="_blank">
-                        Join Us
-                    </a>
-                </li>
-                <li class="sidebar__buttons-item">
-                    <a class="sidebar__button" href="#" target="_blank">
-                        Sign In
-                    </a>
-                </li>
-            </ul>
-
-            <div class="sidebar__social-icons">
-                <a class="sidebar__social-link" href="#" target="_blank">
-                    <img src="./img/icons/social/youtube.svg" alt="">
-                </a>
-                <a class="sidebar__social-link" href="#" target="_blank">
-                    <img src="./img/icons/social/facebook.svg" alt="">
-                </a>
-                <a class="sidebar__social-link" href="#" target="_blank">
-                    <img src="./img/icons/social/twitter.svg" alt="">
-                </a>
-                <a class="sidebar__social-link" href="#" target="_blank">
-                    <img src="./img/icons/social/insta.svg" alt="">
-                </a>
+            <div class="sidebar__user">
+                <div class="sidebar__name">Олег Колесников</div>
+                <div class="sidebar__text">Счастливый студент</div>
+            </div>
+            <div class="sidebar__tabs">
+                <div class="sidebar__item">
+                    <button class="sidebar__button active" id="tasks">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_704_74543)">
+                                <path d="M17.7083 20H2.29167C1.0275 20 0 18.9725 0 17.7083V2.29167C0 1.0275 1.0275 0 2.29167 0H17.7083C18.9725 0 20 1.0275 20 2.29167V17.7083C20 18.9725 18.9725 20 17.7083 20ZM2.29167 1.25C1.7175 1.25 1.25 1.7175 1.25 2.29167V17.7083C1.25 18.2825 1.7175 18.75 2.29167 18.75H17.7083C18.2825 18.75 18.75 18.2825 18.75 17.7083V2.29167C18.75 1.7175 18.2825 1.25 17.7083 1.25H2.29167Z"
+                                      fill="black"/>
+                                <path d="M6.04167 13.125C5.88167 13.125 5.72167 13.0642 5.6 12.9417L3.1 10.4417C2.85583 10.1975 2.85583 9.80167 3.1 9.5575L5.6 7.0575C5.84417 6.81333 6.24 6.81333 6.48417 7.0575C6.72833 7.30167 6.72833 7.6975 6.48417 7.94167L4.42583 10L6.48417 12.0583C6.72833 12.3025 6.72833 12.6983 6.48417 12.9425C6.36167 13.0642 6.20167 13.125 6.04167 13.125Z"
+                                      fill="black"/>
+                                <path d="M8.95833 14.1667C8.9 14.1667 8.84 14.1583 8.78167 14.1417C8.45083 14.0442 8.26083 13.6967 8.35833 13.3658L10.4417 6.28251C10.5392 5.95084 10.8892 5.76417 11.2175 5.85917C11.5483 5.95667 11.7383 6.30417 11.6408 6.63501L9.5575 13.7183C9.47833 13.9908 9.22833 14.1667 8.95833 14.1667Z"
+                                      fill="black"/>
+                                <path d="M13.9583 13.125C13.7983 13.125 13.6383 13.0642 13.5167 12.9417C13.2725 12.6975 13.2725 12.3017 13.5167 12.0575L15.575 9.99916L13.5167 7.94083C13.2725 7.69666 13.2725 7.30083 13.5167 7.05666C13.7608 6.81249 14.1567 6.81249 14.4008 7.05666L16.9008 9.55666C17.145 9.80083 17.145 10.1967 16.9008 10.4408L14.4008 12.9408C14.2783 13.0642 14.1183 13.125 13.9583 13.125Z"
+                                      fill="black"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_704_74543">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Домашние задания</span></button>
+                </div>
+                <div class="sidebar__item">
+                    <button class="sidebar__button" id="diplom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_704_74553)">
+                                <path d="M23.2628 10.5971C23.7176 10.365 24 9.90375 24 9.39337C24 8.883 23.7176 8.42175 23.2628 8.18962L12.6135 2.75362C12.2291 2.55824 11.7705 2.55787 11.3854 2.75399L0.736875 8.19C0.282375 8.42175 0 8.883 0 9.39337C0 9.90375 0.282375 10.365 0.736875 10.5971L4.89038 12.7177V18.2074C4.89038 19.8154 8.412 21.393 12 21.393C15.5884 21.393 19.1096 19.815 19.1096 18.2074V12.7174L21.4609 11.517V15.8017L20.901 17.2305C20.7409 17.6389 20.7934 18.0994 21.0405 18.4616C21.2876 18.8246 21.6979 19.041 22.1366 19.041C22.5754 19.041 22.9852 18.8246 23.2324 18.462C23.4795 18.099 23.532 17.6385 23.3719 17.2301L22.8124 15.8021V10.827L23.2628 10.5971ZM17.7623 18.1721C17.6198 18.6375 15.3491 20.0419 12 20.0419C8.65088 20.0419 6.38025 18.6375 6.2415 18.2074V12.3037L6.23887 12.3019C6.23812 12.057 6.1065 11.8207 5.87325 11.7019L1.3515 9.39337L12 3.95737L22.6489 9.39337L12 14.8294L5.87325 11.7019C5.54063 11.5331 4.6695 11.6674 4.5 12C4.33012 12.3322 4.55813 12.5479 4.89038 12.7177L11.3857 16.0331C11.5781 16.1314 11.7889 16.1805 12 16.1805C12.2107 16.1805 12.4222 16.1314 12.6146 16.0331L17.7593 13.407L17.7623 18.1721Z"
+                                      fill="black"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_704_74553">
+                                    <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Дипломный проект</span></button>
+                </div>
             </div>
         </div>
 
-        <main class="main">
-
-            <section class="main__selection selection">
-                <div class="container">
-                    <div class="selection__inner">
-
-                        <div class="selection__main">
-                            <img class="selection__main-line" src="./img/background/bg-top.png" alt="">
-
-
-                            <div class="selection__background-text">
-                                AIR JORDAN 1
-                                RETRO HIGH OG DUNK HIGH
-                            </div>
-                            <div class="selection__main-img">
-                                <div class="selection__main-shoes">
-                                    <img src="./img/content/3d-shoes.svg" alt="AIR JORDAN 3d">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/yrtwcT2BG-kNhWsQ/scene.splinecode"></spline-viewer>
-                                </div>
-                                <img class="selection__main-line-3d" src="./img/decor/line.svg" alt="">
-                                <img class="selection__main-icon-3d" src="./img/icons/turn.svg" alt="">
-                            </div>
-
-                            <div class="selection__main-details">
-                                <h1 class="selection__main-title title">
-                                    AIR JORDAN 1
-                                    RETRO HIGH OG
-                                </h1>
-                                <div class="selection__main-shoes-size">
-                                    <div class="selection__main-price">
-                                        <p>
-                                            $275
-                                        </p>
-                                    </div>
-                                    <div class="selection__main-size">
-                                        <label>Size</label>
-                                        <select>
-                                            <option value="">40</option>
-                                            <option value="">41</option>
-                                            <option value="">42</option>
-                                            <option value="">43</option>
-                                            <option value="">44</option>
-                                            <option value="">45</option>
-                                        </select>
-                                        <a class="bag-button" href="#">
-                                            <img src="./img/icons/bag.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <a class="selection__main-button button" href="#">
-                                    More Details
-                                    <img src="./img/icons/right-up.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="selection__bottom">
-                            <div class="selection__bottom-inner">
-                                <nav class="selection__bottom-nav">
-                                    <a class="selection__bottom-button prev" id="prevBtn">
-                                        <img src="./img/icons/left.svg" alt="">
-                                        Previous
-                                    </a>
-                                    <a class="selection__bottom-button next" id="nextBtn">
-                                        Next
-                                        <img src="./img/icons/right.svg" alt="">
-                                    </a>
-                                </nav>
-                                <div class="slider">
-                                    <ul class="selection__bottom-list slides">
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/Nike-Cosmic-Unity-2.png"
-                                                    alt="Nike-Cosmic-Unity-2">
-                                                <h3>
-                                                    Nike Cosmic Unity 2
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/NIKE-SB-Dunk-High.png"
-                                                    alt="NIKE SB Dunk High">
-                                                <h3>
-                                                    NIKE SB Dunk High
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/Nike-Dynamo-GO-SE.png"
-                                                    alt="Nike Dynamo GO SE">
-                                                <h3>
-                                                    Nike Dynamo GO SE
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/Nike-Cosmic-Unity-2.png"
-                                                    alt="Nike-Cosmic-Unity-2">
-                                                <h3>
-                                                    Nike Cosmic Unity 2
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/NIKE-SB-Dunk-High.png"
-                                                    alt="NIKE SB Dunk High">
-                                                <h3>
-                                                    NIKE SB Dunk High
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <li class="selection__bottom-item slide">
-                                            <a class="selection__bottom-link" href="#">
-                                                <img src="./img/content/shoes/Nike-Dynamo-GO-SE.png"
-                                                    alt="Nike Dynamo GO SE">
-                                                <h3>
-                                                    Nike Dynamo GO SE
-                                                </h3>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <ul class="selection__black">
-                                <li>ASH</li>
-                                <li>FLASH</li>
-                                <li>FLASH</li>
-                                <li>FLA</li>
-                            </ul>
-                            <ul class="selection__red">
-                                <li>FLASH</li>
-                                <li>FLASH</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="main__line-wrapper">
-                <img class="main__line-left" src="./img/background/bg-left.png" alt="">
-                <img class="main__shoes-left" src="./img/decor/red-shoes-left.png" alt="">
-                <img class="main__line-right" src="./img/background/bg-right.png" alt="">
-
-                <section class="main__essence">
-                    <div class="container">
-                        <div class="essence__inner">
-                            <h2 class="essence__title title">
-                                <span>
-                                    THE ESSENCE
-                                    <img class="essence__img" src="./img/decor/picture-in-text-1.png" alt="">
-                                </span>
-                                <span>HANDCRAFTED</span>
-                                <span>
-                                    <img class="essence__img" src="./img/decor/picture-in-text-2.png" alt="">
-                                    OF FOOTWEAR.
-                                </span>
-                            </h2>
-                            <div class="essence__text">
-                                In terms of footwear, we are the first in Canada to have opened not simple "shops" but
-                                real
-                                company outlets that offer the same service as the artisan shops of yesteryear: this to
-                                make
-                                you go without fail every time you want to buy a pair of handmade genuine leather shoes.
-                                Without fear of making
-                                mistakes and with the certainty that you will be able to wear them
-                                comfortably from the beginning.
-                                <br>
-                                Are you also curious to find out why hundreds of people choose us every day?
-                            </div>
-                            <a class="essence__button button" href="#">
-                                Find Out More
-                                <img src="./img/icons/right-up.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="main__best-sellers">
-                    <div class="container">
-                        <div class="best-sellers__inner">
-                            <h2 class="best-sellers__title title">
-                                BEST S<span>ELLERS</span>
-                            </h2>
-                            <ul class="best-sellers__list">
-                                <li class="best-sellers__item">
-                                    <a class="best-sellers__link" href="#">
-                                        <p>women</p>
-                                        <img src="./img/content/women--best-sellers.jpg" alt="woman">
-                                    </a>
-                                </li>
-                                <li class="best-sellers__item">
-                                    <a class="best-sellers__link" href="#">
-                                        <p>kids</p>
-                                        <img src="./img/content/kids--best-sellers.jpg" alt="kid">
-                                    </a>
-                                </li>
-                                <li class="best-sellers__item">
-                                    <a class="best-sellers__link" href="#">
-                                        <p>men</p>
-                                        <img src="./img/content/men--best-sellers.jpg" alt="man">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="main__sports-time">
-                    <div class="container">
-                        <div class="sports-time__inner">
-                            <h2 class="sports-time__title title">
-                                <span class="decor-text">
-                                    SPORTS
-                                </span>
-                                <span>TIME</span>
-                            </h2>
-                            <div class="sports-time__grid">
-                                <ul class="sports-time__list">
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Nike-Air-Max-Plus-3.png" alt="Nike-Air-Max-Plus-3">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Nike Air Max Plus 3
-                                            </h3>
-                                        </a>
-                                    </li>
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Air-Jordan-4-Retro-Lightning.png" alt="Air-Jordan-4-Retro-Lightning">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Air Jordan 4 Retro Lightning (Premium Batch)
-                                            </h3>
-                                        </a>
-                                    </li>
-
-                                    <li class="sports-time__item">
-                                    </li>
-
-                                    <li class="sports-time__item">
-                                    </li>
-
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Air-Jordan-13-Retro-Court-Purple.png" alt="Air-Jordan-13-Retro-Court-Purple">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Air Jordan 13 Retro Court Purple (Reflective)
-                                            </h3>
-                                        </a>
-                                    </li>
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Air-Jordan-1-AJKO-Blue-Red.png" alt="Air-Jordan-1-AJKO-Blue-Red">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Air Jordan 1 AJKO Blue Red
-                                            </h3>
-                                        </a>
-                                    </li>
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Yeezy-Boost-350-V2-MX-Rock.png" alt="Yeezy-Boost-350-V2-MX-Rock">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Yeezy Boost 350 V2 MX Rock (Real Boost)
-                                            </h3>
-                                        </a>
-                                    </li>
-                                    <li class="sports-time__item">
-                                        <a class="sports-time__link" href="#">
-                                            <div class="sports-time__sell-desk">
-                                                <div class="sports-time__img">
-                                                    <img src="./img/content/shoes/Vans-Old-Skool-Suede-Honey-Gold.png" alt="Vans-Old-Skool-Suede-Honey-Gold">
-                                                </div>
-                                            </div>
-                                            <h3>
-                                                Vans Old Skool Suede Honey Gold
-                                            </h3>
-                                        </a>
-                                    </li>
-
-                                    <li class="sports-time__item">
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <a class="sports-time__button button" href="#">
-                                Lets Discover More
-                                <img src="./img/icons/right-up.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="main__modern-shoes">
-                    <div class="container">
-
-                        <div class="modern-shoes__top">
-                            <div class="modern-shoes__img">
-                                <img src="./img/content/shoes--modern.png" alt="shoes--modern">
-                            </div>
-                            <div class="modern-shoes__details">
-                                <h2 class="modern-shoes__title">
-                                    WE PROVIDE MODERN SHOES
-                                </h2>
-                                <p class="modern-shoes__text">
-                                    Design for the way you live your life. Atoms are beautiful in their
-                                    simplicity, supporting your feet with absolute comfort.
-                                </p>
-                                <a class="modern-shoes__button button" href="#">
-                                    Explore More
-                                    <img src="./img/icons/right-up.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="modern-shoes__bottom">
-                            <h2 class="modern-shoes__title">
-                                Our Favorite <span>Nike</span> styles<span>.</span>
-                            </h2>
-                            <ul class="modern-shoes__list">
-                                <li class="modern-shoes__item">
-                                    <a class="modern-shoes__link" href="#">
-                                        <h3>
-                                            NIKE Mercurial Superfly
-                                        </h3>
-                                        <div class="modern-shoes__img-wrapper">
-                                            <img src="./img/content/shoes/NIKE-Mercurial-Superfly.png" alt="NIKE-Mercurial-Superfly">
-                                            <p>
-                                                $271
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="modern-shoes__item">
-                                    <a class="modern-shoes__link" href="#">
-                                        <h3>
-                                            NIKE Air Zoom Alphafly
-                                        </h3>
-                                        <div class="modern-shoes__img-wrapper">
-                                            <img src="./img/content/shoes/NIKE-Air-Zoom-Alphafly.png" alt="NIKE-Air-Zoom-Alphafly">
-                                            <p>
-                                                $216
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="modern-shoes__item">
-                                    <a class="modern-shoes__link" href="#">
-                                        <h3>
-                                            NIKE Dunk High
-                                        </h3>
-                                        <div class="modern-shoes__img-wrapper">
-                                            <img src="./img/content/shoes/NIKE-Dunk-High.png" alt="NIKE-Dunk-High">
-                                            <p>
-                                                $187
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="main__trademarks">
-                    <div class="container">
-                        <ul class="trademarks__list">
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/adidas.png" alt="adidas-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/nike.png" alt="nike-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/puma.png" alt="puma-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/converse.png" alt="converse-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/reebok.png" alt="reebok-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/vans.png" alt="vans-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/jordan.png" alt="jordan-logo">
-                            </li>
-                            <li class="trademarks__item">
-                                <img src="./img/icons/logos/new-balance.png" alt="new-balance-logo">
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="main__best-shoes">
-                    <div class="container">
-                        <div class="best-shoes__inner">
-                            <div class="best-shoes__details">
-                                <h2 class="best-shoes__title">
-                                    BEST SHOES FOR
-                                    THE BEST PEOPLE
-                                </h2>
-                                <p class="best-shoes__text">
-                                    Design for the way you live your life. Atoms are beautiful in
-                                    their simplicity, supporting your feet with absolute comfort.
-                                </p>
-                                <a class="best-shoes__button button" href="#">
-                                    Explore More
-                                    <img src="./img/icons/right-up.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="best-shoes__gallery">
-                                <ul class="best-shoes__item-wrapper">
-                                    <li class="best-shoes__item-1">
-                                        <img src="./img/content/girl-1--best-section.jpg" alt="girl-1">
-                                    </li>
-                                </ul>
-                                <ul class="best-shoes__items-wrapper">
-                                    <li class="best-shoes__item-2">
-                                        <img src="./img/content/girl-2--best-section.jpg" alt="girl-2">
-                                    </li>
-                                    <li class="best-shoes__item-3">
-                                        <img src="./img/content/legs--best-section.jpg" alt="legs">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    </aside>
+    <div class="content">
+        <div class="container">
+            <div class="content__block" id="tasksBlock">
+                <div class="content__title">Домашние задания</div>
+                <ul class="content__list">
+                    <li class="content__list-item">
+                        <a href="hello-arokenru/index.html">Урок 1</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="intro-4/index.html">Урок 2</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="html-15/index.html">Урок 3</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-4/index.html">Урок 4</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-5/index.html">Урок 5</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-6/index.html">Урок 6</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-7/index.html">Урок 7</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-8/index.html">Урок 8</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-9/index.html">Урок 9</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-10/index.html">Урок 10</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-11/index.html">Урок 11</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-12/index.html">Урок 12</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-13/index.html">Урок 13</a>
+                    </li>
+                    <p>JavaScript:</p>
+                    <li class="content__list-item">
+                        <a href="homework-14/index.html">Урок 14</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-15/index.html">Урок 15</a>
+                    </li>
+                    <p>Макет wake-bake:</p>
+                    <li class="content__list-item">
+                        <a href="homework-16/index.html">Урок 16</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-17/index.html">Урок 17</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-18/index.html">Урок 18</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-19/index.html">Урок 19</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-20/index.html">Урок 20</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-21/index.html">Урок 21</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-22/index.html">Урок 22</a>
+                    </li>
+                    <li class="content__list-item">
+                        <a href="homework-23/index.html">Урок 23</a>
+                    </li>
+                </ul>
             </div>
-
-            <section class="main__visionairies">
-                <div class="container">
-                    <div class="visionairies__inner">
-                        <div class="visionairies__img">
-                            <img src="./img/content/shoes--visionaires.jpg" alt="black-white-shoes">
-                        </div>
-                        <div class="visionairies__details">
-                            <div class="visionairies__title-wrapper">
-                                <h2 class="visionairies__title title">
-                                    WE ARE <span>VISIONARIES</span>
-                                </h2>
-                                <p>
-                                    Exploring the boundaries of footwear with expert design knowledge and
-                                    manufacture in mind.
-                                </p>
-                            </div>
-                            <div class="visionairies__text">
-                                <p>
-                                    <span>INSIGHTFUL CREATIVE DIRECTION</span> : Uniting Consumer Insights with
-                                    progressive
-                                    manufacturing methods, we create comprehensive plans to outpace your competition.
-                                </p>
-                                <p>
-                                    <span>PURPOSEFUL DESIGN</span> : We create products that captivate consumers and
-                                    elevate brands.
-                                    applying a refined sense of beauty and style, our designs are alluring.
-                                </p>
-                                <p>
-                                    <span>RELENTLESS INNOVATION</span> : We live to challenge the boundaries of
-                                    convention and take
-                                    advantage of every breakthrough opportunity big or small. we’ll help you define the
-                                    cutting-edge of your business.
-                                </p>
-                            </div>
-                            <a class="visionairies__button button" href="#">
-                                Customization Available
-                                <img src="./img/icons/right-up.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <div class="content__block hidden" id="diplomBlock">
+                <div class="content__title">Дипломный проект</div>
+                <div class="content__list-diplom">
+                    <a href="ПАПКА-С-НОМЕРОМ-УРОКА">Ссылка на ДЗ</a>
                 </div>
-            </section>
-
-            <section class="main__nikeclub">
-                <div class="container">
-                    <div class="nikeclub__inner">
-                        <img src="./img/decor/black-shoes-right.png" alt="black-shoes">
-                        <div class="nikeclub__main">
-                            <div class="nikeclub__details">
-                                <h2 class="nikeclub__title title">
-                                    JOIN OUR NIKECLUB & GET 15% OFF
-                                </h2>
-                                <p class="nikeclub__text">
-                                    Sign up for free. Join the community, Never pay for shipping.
-                                </p>
-                                <a class="visionairies__button button" href="#">
-                                    Join Us
-                                    <img src="./img/icons/right-up.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="nikeclub__logo">
-                                <img src="./img/icons/nike-logo.svg" alt="nike-logo">
-                            </div>
-                        </div>
+                <div class="content__decor">
+                    <div class="content__decor-text">Давай проверим, чему ты научился!</div>
+                    <div class="content__decor-img">
+                        <img src="src/decor.png" alt="decor">
                     </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-
-                    <div class="footer__top">
-                        <ul class="footer__top-list">
-                            <li class="footer__top-item">
-                                <img src="./img/icons/vehicule.svg" style="width: 22px; height: 19px;" alt="">
-                                <div class="footer__top-text">
-                                    <p>Free Delivery</p>
-                                    <p>from $29.99</p>
-                                </div>
-                            </li>
-                            <li class="footer__top-item">
-                                <img src="./img/icons/time.svg" style="width: 16px; height: 19.02px;" alt="">
-                                <div class="footer__top-text">
-                                    <p>Free Withdrawal 1h</p>
-                                    <p>in store</p>
-                                </div>
-                            </li>
-                            <li class="footer__top-item">
-                                <img src="./img/icons/guard.svg" style="width: 16px; height: 19.99px;" alt="">
-                                <div class="footer__top-text">
-                                    <p>100% Secure Payment</p>
-                                    <p>at your service</p>
-                                </div>
-                            </li>
-                            <li class="footer__top-item">
-                                <img src="./img/icons/box.svg" style="width: 16px; height: 19.89px;" alt="">
-                                <div class="footer__top-text">
-                                    <p>Returns & Exchanges</p>
-                                    <p>offered 365 days</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__main" id="1">
-                        <div class="form">
-                            <p>
-                                Let’s stay in touch
-                            </p>
-                            <form action="" id="submit-form" >
-                                <div>
-                                    <input type="email" placeholder="Enter email...">
-                                </div>
-                                <button type="submit">
-                                    Subscribe
-                                </button>
-                            </form>
-                            <img src="./img/icons/nike-logo-footer.svg" alt="nike-logo">
-                        </div>
-
-                        <div class="footer__grid">
-                            <div class="grid__shop">
-                                <p>
-                                    SHOP
-                                </p>
-                                <ul class="grid__shop-list">
-                                    <li class="grid__shop-item">
-                                        <a class="grid__shop-link" href="#">
-                                            Mens
-                                        </a>
-                                    </li>
-                                    <li class="grid__shop-item">
-                                        <a class="grid__shop-link" href="#">
-                                            Womens
-                                        </a>
-                                    </li>
-                                    <li class="grid__shop-item">
-                                        <a class="grid__shop-link" href="#">
-                                            New Arrival
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="grid__service">
-                                <p>
-                                    OUR SERVICES
-                                </p>
-                                <ul class="grid__service-list">
-                                    <li class="grid__service-item">
-                                        <a class="grid__service-link" href="#">
-                                            Customize your products
-                                        </a>
-                                    </li>
-                                    <li class="grid__service-item">
-                                        <a class="grid__service-link" href="#">
-                                            Gift Card
-                                        </a>
-                                    </li>
-                                    <li class="grid__service-item">
-                                        <a class="grid__service-link" href="#">
-                                            Maintain & Repair
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="grid__help">
-                                <p>
-                                    NEED HELP ?
-                                </p>
-                                <ul class="grid__help-list">
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            My Account
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            Shipping
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            Return & Exchanges
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            FAQs
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            Rewards
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            Loyalty program
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            How to choose your product?
-                                        </a>
-                                    </li>
-                                    <li class="grid__help-item">
-                                        <a class="grid__help-link" href="#">
-                                            Sports Trends
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="grid__contact">
-                                <p>
-                                    CONTACT US
-                                </p>
-                                <ul class="grid__contact-list">
-                                    <li class="grid__contact-item">
-                                        <a class="grid__contact-link" href="#">
-                                            Find a Store
-                                        </a>
-                                    </li>
-                                    <li class="grid__contact-item">
-                                        <a class="grid__contact-link" href="#">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                    <li class="grid__contact-item">
-                                        <a class="grid__contact-link" href="#">
-                                            Terms & Conditions
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="grid__enterprise">
-                                <p>
-                                    OUR ENTERPRISE
-                                </p>
-                                <ul class="grid__enteprise-list">
-                                    <li class="grid__enterprise-item">
-                                        <a class="grid__enterprise-link" href="#">
-                                            Who are we?
-                                        </a>
-                                    </li>
-                                    <li class="grid__enterprise-item">
-                                        <a class="grid__enterprise-link" href="#">
-                                            Press and news
-                                        </a>
-                                    </li>
-                                    <li class="grid__enterprise-item">
-                                        <a class="grid__enterprise-link" href="#">
-                                            Our alliances
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer__bottom">
-                        <div class="footer__bottom-copy">
-                            <p>
-                                2022 Nike, Inc. All Rights Reserved
-                            </p>
-                            <img src="./img/icons/copyright.svg" alt="">
-                        </div>
-
-                        <div class="footer__bottom-socials">
-                            <ul class="footer__bottom-list">
-                                <li class="footer__bottom-item">
-                                    <a href="#">
-                                        <img src="./img/icons/social/youtube.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__bottom-item">
-                                    <a href="#">
-                                        <img src="./img/icons/social/facebook.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__bottom-item">
-                                    <a href="#">
-                                        <img src="./img/icons/social/twitter.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__bottom-item">
-                                    <a href="#">
-                                        <img src="./img/icons/social/insta.svg" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
-
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js"></script>
-    <script type="module" src="./js/main.js"></script>
+</div>
+<script src="src/index.js"></script>
 </body>
-
 </html>
+
